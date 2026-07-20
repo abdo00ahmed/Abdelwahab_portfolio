@@ -254,9 +254,9 @@ section{ padding: 90px 0; position:relative; }
 
 .community-photo{
   position:relative; border-radius: var(--radius); overflow:hidden;
-  border:1px solid var(--border); max-height:420px;
+  border:1px solid var(--border); aspect-ratio: 4/3;
 }
-.community-photo img{ width:100%; height:100%; object-fit:cover; display:block; }
+.community-photo img{ width:100%; height:100%; object-fit:cover; object-position: center 15%; display:block; }
 .community-photo::after{
   content:""; position:absolute; inset:0; border-radius:var(--radius);
   border: 1.5px dashed rgba(19,185,253,0.35); pointer-events:none;
